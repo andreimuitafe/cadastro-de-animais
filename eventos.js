@@ -27,8 +27,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-
-
   function atualizarVacinas(tipo) {
     const vacinaGato = ['Panleucopenia Felina (FPV)', 'Inotraqueíte Viral Felina (FHV-1)', 'Calicivírus Felino (FCV)'];
     const vacinaCachorro = ['Cinomose Canina', 'Parvovirose Canina', 'Hepatite Infecciosa Canina (Adenovírus tipo 1)', 'Leptospirose', 'Raiva', 'Canis (Bordetella bronchiseptica)'];
@@ -59,5 +57,5 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 // andrei
-
+// https://www.youtube.com/watch?v=Ptbk2af68e8
 
