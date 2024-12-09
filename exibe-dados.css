@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #ff6600;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  ul li strong {
+    color: #333;
+  }
+  
+  .button {
+    display: inline-block;
+    background-color: #ff6600;
+    color: white;
+    font-size: 18px;
+    padding: 12px 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 30px;
+  }
+  
+  .button:hover {
+    background-color: #e65c00;
+    transform: translateY(-2px);
+  }
+  
+  .button:active {
+    background-color: #b34d00;
+    transform: translateY(1px);
+  }
+  
+  .animal-foto {
+    max-width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+  }
+  
+  ul li {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  .container {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+/* iadson

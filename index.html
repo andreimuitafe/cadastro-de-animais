@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Animais de Estimação</title>
+
+  <link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>🐾 Cadastro de Animais de Estimação 🐶🐱</h1>
+      <p>Queremos conhecer melhor seu amiguinho de quatro patas!</p>
+    </header>
+
+    <form action="processa-dados.php" method="POST" enctype="multipart/form-data">
+
+      <div class="form-group">
+        <label for="nome">🐾 Nome do Animal:</label>
+        <input type="text" id="nome" name="nome" placeholder="Ex: Luna, Rex" required>
+      </div>
+
+      <div class="form-group">
+        <label for="idade">📅 Idade do Animal:</label>
+        <input type="number" id="idade" name="idade" placeholder="Ex: 2" required min="0">
+      </div>
+
+      <div class="form-group">
+        <label for="adocao">📆 Data de Adoção:</label>
+        <input type="date" id="adocao" name="adocao" required>
+      </div>
+
+      <div class="form-group">
+        <label>🐕 Tipo do Animal:</label>
+        <div class="radio-group">
+          <input type="radio" id="gato" name="tipo" value="Gato" required>
+          <label for="gato">Gato</label>
+      
+          <input type="radio" id="cachorro" name="tipo" value="Cachorro" required>
+          <label for="cachorro">Cachorro</label>
+      
+          <input type="radio" id="outro" name="tipo" value="Outro" required>
+          <label for="outro">Outro</label>
+        </div>
+        <div class="form-group" id="outro-tipo-group" style="display: none;">
+          <label for="outro-tipo">🐾 Qual?</label>
+          <input type="text" id="outro-tipo" name="outro-tipo" placeholder="Descreva o tipo de animal">
+        </div>
+        
+  
+      <div class="form-group" id="vacinas-group" style="display: none;">
+        <label>💉 Vacinas Tomadas:</label>
+        <div class="checkbox-group" id="vacinas-cachorro" style="display: none;">
+          <label>
+
+            <input type="checkbox" name="vacinas[]" value="Raiva">
+            Vacina contra Raiva
+
+          </label>
+
+          <label>
+
+            <input type="checkbox" name="vacinas[]" value="V10">
+            Vacina Polivalente (V10)
+
+          </label>
+          <label>
+
+            <input type="checkbox" name="vacinas[]" value="Gripe Canina">
+            Vacina contra Gripe Canina
+
+          </label>
+          <label>
+
+            <input type="checkbox" name="vacinas[]" value="Leptospirose">
+            Vacina contra Leptospirose
+
+          </label>
+          <label>
+
+            <input type="checkbox" name="vacinas[]" value="Giárdia">
+            Vacina contra Giárdia
+          </label>
+
+        </div>
+
+        <div class="checkbox-group" id="vacinas-gato" style="display: none;">
+          <label>
+
+            <input type="checkbox" name="vacinas[]" value="Antirrábica">
+            Vacina Antirrábica
+
+          </label>
+          <label>
+
+            <input type="checkbox" name="vacinas[]" value="V4">
+            Vacina Polivalente (V4)
+
+          </label>
+          <label>
+
+            <input type="checkbox" name="vacinas[]" value="Leucemia Felina">
+            Vacina contra Leucemia Felina
+          </label>
+
+          <label>
+
+            <input type="checkbox" name="vacinas[]" value="PIF">
+            Vacina contra Peritonite Infecciosa Felina (PIF)
+
+          </label>
+          <label>
+
+            <input type="checkbox" name="vacinas[]" value="Clamidiose">
+            Vacina contra Clamidiose
+
+          </label>
+
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <label for="cor">🎨 Cor preferida do perfil:</label>
+        <input type="color" id="cor" name="cor" value="#ff6600">
+      </div>
+
+      <div class="form-group">
+        <label for="email">📧 E-mail do Dono:</label>
+        <input type="email" id="email" name="email" placeholder="Ex: dono@email.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="telefone">📞 Telefone para Contato:</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="Ex: (84) 99999-9999" required>
+      </div>
+
+      <div class="form-group">
+        <label for="foto">📷 Foto do Animal:</label>
+        <input type="file" id="foto" name="foto" accept="image/*" required>
+      </div>
+
+      <div class="form-group">
+        <label for="energia">⚡ Nível de Energia:</label>
+        <input type="range" id="energia" name="energia" min="1" max="10" value="5">
+      </div>
+
+      <div class="form-group">
+        <label for="rede_social">🔗 Link para Rede Social do Pet:</label>
+        <input type="url" id="rede_social" name="rede_social" placeholder="Ex: https://instagram.com/meupet">
+      </div>
+
+      <div class="form-group">
+        <label for="raca">🐾 Raça do Animal:</label>
+        <input type="text" id="raca" name="raca" placeholder="Ex: Poodle, Vira-lata" required>
+      </div>
+
+      <div class="form-group">
+        <label>💉 O Animal é Castrado?</label>
+        <div class="radio-group">
+          <label for="castrado-sim">
+            <input type="radio" id="castrado-sim" name="castrado" value="Sim" required>
+            Sim
+          </label>
+          <label for="castrado-nao">
+            <input type="radio" id="castrado-nao" name="castrado" value="Não" required>
+            Não
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="temperamento">🧸 Temperamento do Animal:</label>
+        <textarea id="temperamento" name="temperamento" placeholder="Ex: Calmo, Brincalhão, Ativo" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="horario-passeio">🕒 Horário Preferido para Passeio:</label>
+        <input type="time" id="horario-passeio" name="horario-passeio" required>
+      </div>
+
+   
+        <div class="form-buttons">
+          <button type="submit">Enviar Cadastro 🐾</button>
+          <input type="reset" value="Limpar Campos" class="reset-button">
+        </div>
+
+    </form>
+
+    <footer>
+      <p>🐾 Obrigado por cuidar com tanto amor dos seus animais! 🐾</p>
+    </footer>
+  </div>
+  
+  <button type="button" id="devsButton" onclick="window.location.href='desenvolvedores.html'">👨‍💻 Conheça os Devs</button>
+
+  <script src="eventos.js"></script>
+</body>
+</html>
+<!-- allyson -->

@@ -1,0 +1,203 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #f6d365, #fda085);
+  margin: 0;
+  padding: 0;
+  color: #444;
+}
+
+
+.container {
+  max-width: 800px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #ff6600;
+  font-size: 2.5rem;
+}
+
+p {
+  color: #666;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 1rem;
+  margin-top: 10px;
+  display: block;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="email"],
+input[type="tel"],
+input[type="color"],
+input[type="file"],
+input[type="url"],
+input[type="time"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.radio-group,
+.checkbox-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+button,
+input[type="reset"] {
+  width: 100%;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  margin-top: 10px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+input[type="reset"] {
+  background-color: #f44336; 
+  color: white;
+  font-size: 1em;
+}
+
+input[type="reset"]:hover {
+  background-color: #d32f2f;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  padding: 10px;
+  border: 2px solid #ff6600;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  cursor: pointer;
+}
+
+.checkbox-group label:hover {
+  background-color: #ffcc99;
+  border-color: #ff9933;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+#tipo-outro-group {
+  margin-top: 10px;
+}
+
+#tipo-outro {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #ff6600;
+  border-radius: 8px;
+}
+
+.form-buttons {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  margin-top: 20px;
+}
+
+.form-buttons button {
+  width: 60%; 
+}
+
+.form-buttons .reset-button {
+  width: 60%; 
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  resize: vertical;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#devsButton {
+  position: fixed;
+  bottom: 20px; 
+  right: 20px; 
+  background: #ff6600;
+  color: #fff;
+  padding: 8px 15px; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  z-index: 1000; 
+  width: auto; /
+}
+
+#devsButton:hover {
+  background: #e65500; 
+}
+/* iadson, andrei
